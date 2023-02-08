@@ -1,0 +1,68 @@
+@import "../../utils/fonts";
+@import "../../utils/variables";
+
+.writing {
+	margin: 306px 20px 10px 20px;
+
+	&__area {
+		border: $border;
+
+		border-radius: 8px;
+
+		align-items: center;
+		padding: 20px;
+
+		&-input {
+			width: 100%;
+			border: none;
+			outline: none;
+			padding-left: 14px;
+
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__buttons {
+		gap: 25px;
+		
+		&-item {
+			width: 22px;
+			height: 22px;
+			border-radius: 50px;
+			border: none;
+			background-color: $white;
+			border-radius: 50px;
+			transition: 0.3s ease background-color;
+
+			&:hover {
+				background-color: $light-grey;
+			}
+
+			&:active {
+				background-color: #fc6a468e;
+			}
+		}
+
+		&-smile {
+			background-image: url(../images/smile.svg);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		&-attach {
+			background-image: url(../images/attach.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		&-send {
+			background-image: url(../images/send.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+}

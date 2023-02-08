@@ -1,0 +1,67 @@
+@import "../../utils/variables";
+@import "../../utils/fonts";
+
+.sender {
+	padding: 20px;
+	gap: 16px;
+
+	cursor: pointer;
+
+	border-bottom: $border;
+  transition: 0.3s ease background-color;
+
+	&:hover {
+		background-color: $light-grey;
+	}
+
+	&__icon {
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__info {
+		width: 100%;
+		gap: 8px;
+	}
+
+	&__name {
+		align-items: center;
+		justify-content: space-between;
+
+		&-text {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 20px;
+
+			color: $dark-blue;
+		}
+
+		&-date {
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 16px;
+
+			color: $gray;
+		}
+	}
+
+	&__message {
+		&-text {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 16px;
+
+			color: $dark-blue;
+
+		}
+	}
+
+	&__choose {
+		background: $light-peach;
+		border-right: 2px solid $peach;
+		
+		&:hover {
+			background: $light-peach;
+		}
+	}
+}

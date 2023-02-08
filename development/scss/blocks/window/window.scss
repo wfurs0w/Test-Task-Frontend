@@ -1,0 +1,9 @@
+@import "../../utils/variables";
+
+.window {
+	width: 100%;
+	max-width: 1051px;
+	background-color: $white;
+	border-radius: 12px;
+	margin-bottom: 54px;
+}

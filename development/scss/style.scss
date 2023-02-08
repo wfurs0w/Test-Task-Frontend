@@ -1,5 +1,15 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./base/_normalize";
+
+@import "./blocks/header/header.scss";
+
+@import "./blocks/window/window.scss";
+@import "./blocks/chats/chats.scss";
+@import "./blocks/chats/sender.scss";
+@import "./blocks/chats/favorites.scss";
+
+@import "./blocks/messages/messages.scss";
+@import "./blocks/messages/panel.scss";
+@import "./blocks/messages/dialog.scss";
+@import "./blocks/messages/writing.scss";

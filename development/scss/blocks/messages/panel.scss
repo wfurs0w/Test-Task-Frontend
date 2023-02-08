@@ -1,0 +1,119 @@
+@import "../../utils/fonts";
+@import "../../utils/variables";
+
+.panel {
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px;
+
+	&__user {
+
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+		cursor: pointer;
+
+		&-icon {
+			width: 34px;
+			height: 34px;
+		}
+
+		&-name {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 20px;
+			color: $dark-blue;
+		}
+	}
+
+	&__menu {
+		align-items: center;
+		justify-content: space-between;
+		gap: 18px;
+
+		&-serch {
+			width: 20px;
+			height: 20px;
+			border: none;
+			background-color: $white;
+			border-radius: 50px;
+			background-image: url(../images/search.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			transition: 0.3s ease background-color;
+
+			&:hover {
+				background-color: $light-peach;
+			}
+		}
+	}
+}
+
+.panel__dropdown {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  position: relative;
+	z-index: 3;
+
+	&-btn {
+		width: 20px;
+		height: 20px;
+		border: none;
+		background-color: $white;
+		border-radius: 50px;
+		background-image: url(../images/select.svg);
+		background-repeat: no-repeat;
+		transition: 0.3s ease background-color;
+
+		&:hover {
+			background-color: $light-peach;
+		}	
+	}
+
+	.dropdown {
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		width: 168px;
+		height: 196px;
+		padding-left: 15px;
+		top: 140%;
+		right: 30%;
+		display: flex;
+
+		border-radius: 8px;
+		background-color: $white;
+		box-shadow: 0px 0px 15px -3px rgba(34, 60, 80, 0.2);
+
+		&__list {
+			display: flex;
+			justify-content: space-around;
+			flex-direction: column;
+		}
+	
+		&__item {
+			list-style: none;
+	
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	
+		&__link {
+			color: $dark-purple;
+			;
+			text-decoration: none;
+	
+			&:hover {
+				color: $peach;
+			}
+		}
+	}
+
+	.dropdown--active {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+

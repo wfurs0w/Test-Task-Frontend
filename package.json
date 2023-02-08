@@ -37,5 +37,8 @@
 	"bugs": {
 		"url": "https://github.com/Admiral-Studios/Test-Task-Frontend/issues"
 	},
-	"homepage": "https://github.com/Admiral-Studios/Test-Task-Frontend#readme"
+	"homepage": "https://github.com/Admiral-Studios/Test-Task-Frontend#readme",
+	"dependencies": {
+		"bootstrap-icons": "^1.10.3"
+	}
 }

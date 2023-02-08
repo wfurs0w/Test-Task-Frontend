@@ -1,0 +1,94 @@
+@import "../../utils/fonts";
+@import "../../utils/variables";
+
+.dialog {
+	border-top: $border;
+
+	&__date {
+		margin: 20px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&-text {
+			padding: 6px 12px;
+
+			position: absolute;
+			width: 58px;
+			height: 28px;
+			right: 50%;
+			z-index: 2;
+
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 16px;
+
+			display: flex;
+			align-items: center;
+
+			color: $gray;
+
+			background: $silver;
+			border-radius: 300px;
+		}
+
+		&-line {
+			width: 90%;
+			border: 1px solid $silver;
+			z-index: 1;
+		}
+	}
+
+	&__touch {
+		margin: 32px 20px;
+		gap: 16px;
+		min-width: 525px;
+
+		&-message {
+			gap: 12px;
+			padding: 16px;
+			max-width: 461px;
+			max-height: 98px;
+
+			background: $silver;
+			border-radius: 0px 20px 20px 20px;
+
+			&_text {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 160%;
+
+				color: $dark-purple;
+			}
+
+			&_time {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+
+				color: $dark-purple;
+
+				opacity: 0.5;
+			}
+
+		}
+	}
+
+	&__out {
+		flex-direction: row-reverse;
+
+		&-message {
+			background: #183d67;
+			border-radius: 20px 0px 20px 20px;
+
+			&_text {
+				color: $white;
+			}
+
+			&_time {
+				text-align: right;
+			}
+		}
+	}
+}
