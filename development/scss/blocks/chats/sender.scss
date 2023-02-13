@@ -65,3 +65,65 @@
 		}
 	}
 }
+
+@media (min-width: 575px) and (max-width: 768px) {
+	.sender {
+		padding: 10px;
+		gap: 6px;
+
+		&__icon {
+			&-img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		&__info {
+			gap: 6px;
+		}
+
+		&__name {
+
+			&-text {
+				font-size: 10px;
+				line-height: 14px;
+			}
+
+			&-date {
+				font-size: 8px;
+				line-height: 12px;
+			}
+		}
+
+		&__message {
+			&-text {
+				font-size: 10px;
+				line-height: 16px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 996px) {
+	.sender {
+		&__name {
+
+			&-text {
+				font-size: 12px;
+				line-height: 14px;
+			}
+
+			&-date {
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+
+		&__message {
+			&-text {
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+	}
+}

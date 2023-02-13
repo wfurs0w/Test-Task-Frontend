@@ -38,3 +38,9 @@
 		height: 705px;
 	}
 }
+
+@media (min-width: 320px) and (max-width: 575px){
+	.chats {
+		width: 100%;
+	}
+}

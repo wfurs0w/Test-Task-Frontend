@@ -1,3 +1,9 @@
 .messages {
 	width: 66%;
 }
+
+@media (min-width: 320px) and (max-width: 575px){
+	.messages {
+		width: 0;
+	}
+}
