@@ -39,6 +39,8 @@
 	},
 	"homepage": "https://github.com/Admiral-Studios/Test-Task-Frontend#readme",
 	"dependencies": {
-		"bootstrap-icons": "^1.10.3"
+		"bootstrap-icons": "^1.10.3",
+		"gh-pages": "^5.0.0",
+		"gulp-svg-sprite": "^2.0.1"
 	}
 }
